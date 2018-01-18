@@ -55,17 +55,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Image Recognition Program.exe" size="1541120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Image Recognition Program.exe" size="2049536">
       <assemblyIdentity name="Image Recognition Program" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8lhW0TKMFC7P7Vq+41asmZMDk4zGjuAwB/wPrfXdD/M=</dsig:DigestValue>
+        <dsig:DigestValue>1Zgqv0j2OJEQiAWPCBZ1Sf0eiCS0sZVeMfe1lSJ5UYE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="cvextern.dll" size="11576832">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S8iMT+Lo19Uj2I4R1bmgyjM8ZY4ljFd8umDRGRaAVaE=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Icon.ico" size="125853">
     <hash>
       <dsig:Transforms>
@@ -82,15 +91,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>bvzpUhhNgyzEZpY7PN788Nb5MMx4fKKWnjkEa9zdUZ4=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resources\Icon.ico" size="125853">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>xuq1VbboNuHboCHzqrzcKbuboNTqXNPfFoHBivh+O8A=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Samples\Apple1.jpg" size="109302">
@@ -532,6 +532,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>mKpYHHqJeJT0B8qH6BaYjdgCsllpcmsojtlZIIGPlr0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="templates.xml" size="3785" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uQrbdDTEXNUmCpNUlincbxwYUi4RZ7dsiNYbj37MPZU=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

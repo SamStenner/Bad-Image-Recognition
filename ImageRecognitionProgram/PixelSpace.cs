@@ -47,11 +47,11 @@ namespace ImageIdentifier {
 
         // Gets pixel colour
         public Color GetPixel(int x, int y) {
-            y *= stride;                              // Locates y coordinate
-            x *= bytes;                               // Locates x coordinate
-            return Color.FromArgb(pixels[y + x + 2],  // Converts to colour by
-                                  pixels[y + x + 1],  // accessing the adjacent
-                                  pixels[y + x + 0]); // byte data
+            y *= stride;                                // Locates y coordinate
+            x *= bytes;                                 // Locates x coordinate
+            return Color.FromArgb(pixels[y + x + 2],    // Converts to colour by
+                                  pixels[y + x + 1],    // accessing the adjacent
+                                  pixels[y + x + 0]);   // byte data
         }
 
         // Sets pixel colour
@@ -180,17 +180,17 @@ namespace ImageIdentifier {
 
         // Converts to a bitmap
         public Bitmap ToBitmap() {
-            Fitmap fmp = new Fitmap(cols, rows);              // Defines empty fitmap
-            HSV current = new HSV();                          // HSV pixel to contain current pixel data
-            fmp.LockBits();                                   // Locks the bits
-            for (int row = 0; row < rows; row++) {            // Loops through rows
-                for (int col = 0; col < cols; col++) {        // Loops through columns
-                    current = map[col, row];                  // Retrieves subject pixel
-                    fmp.SetPixel(col, row, current.ToRGB());  // Sets fitmap pixel to that pixel
+            Fitmap fmp = new Fitmap(cols, rows);                // Defines empty fitmap
+            HSV current = new HSV();                            // HSV pixel to contain current pixel data
+            fmp.LockBits();                                     // Locks the bits
+            for (int row = 0; row < rows; row++) {              // Loops through rows
+                for (int col = 0; col < cols; col++) {          // Loops through columns
+                    current = map[col, row];                    // Retrieves subject pixel
+                    fmp.SetPixel(col, row, current.ToRGB());    // Sets fitmap pixel to that pixel
                 }
             }
-            fmp.UnlockBits();                                 // Releases bits from memory
-            return fmp.ToBitmap();                            // Returns the bitmap of the fitmap
+            fmp.UnlockBits();                                   // Releases bits from memory
+            return fmp.ToBitmap();                              // Returns the bitmap of the fitmap
         }
 
     }

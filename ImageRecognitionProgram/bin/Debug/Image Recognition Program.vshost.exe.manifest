@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Image Recognition Program.exe" size="1541120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Image Recognition Program.exe" size="13629952">
       <assemblyIdentity name="Image Recognition Program" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8lhW0TKMFC7P7Vq+41asmZMDk4zGjuAwB/wPrfXdD/M=</dsig:DigestValue>
+        <dsig:DigestValue>AOOsiypdaNLpoedzUdmBQIdfCf7Qaf475DN9TejExdQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

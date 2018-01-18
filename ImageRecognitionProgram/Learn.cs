@@ -26,7 +26,7 @@ namespace ImageIdentifier
 
         // Checks if empty
         private void txtName_TextChanged(object sender, System.EventArgs e) {
-            btnLearn.Enabled = txtName.Text == string.Empty ? false : true; // Rejects empty strings
+            btnLearn.Enabled = txtName.Text == string.Empty ? false : true;   // Rejects empty strings
         }
     }
 }

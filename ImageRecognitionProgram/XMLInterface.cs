@@ -408,7 +408,7 @@ namespace ImageIdentifier {
             DialogResult dr = new DialogResult();                           // Creates a dialog object
             Learner addBox = new Learner();                                 // Instantiates learning window
             addBox.ObjName = responses[selectedNode].Key.ToString();        // Sets the default name text to that of the result
-            addBox.ObjType = result.objParent;                               // Sets the default object type to that of the result
+            addBox.ObjType = result.objParent;                              // Sets the default object type to that of the result
             dr = addBox.ShowDialog();                                       // Displays he dialog
             if (dr == DialogResult.OK) {                                    // Once dialog box closed
                 string name = addBox.ObjName;                               // Sets name to submitted name    

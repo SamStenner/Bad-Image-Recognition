@@ -14,23 +14,23 @@ namespace ImageIdentifier {
 
         // Identifies the salient region using average colour
         private void GetColour() {
-            Fitmap fmpOrg = new Fitmap((Bitmap)picOriginal.Image);    // Converts original image to a fitmap
-            int rows = fmpOrg.height;                                 // Defines row counter as the image height in pixels
-            int cols = fmpOrg.width;                                  // Defines column counter as the image width in pixels
-            HSVImage hsvImage = new HSVImage(fmpOrg);                 // Creates an HSV matrix of the original image
-            GreyImage saliencyMap = new GreyImage(cols, rows);        // Creates a blank saliency map of the original image
-            HSV avHSV = hsvImage.Average();                           // Calculates the average HSV of all the pixels in the matrix
-            double avHue = avHSV.hue;                                 // ---
-            double avSat = avHSV.sat;                                 // Defines average HSV values as the attributes of the average HSV
-            double avVal = avHSV.val;                                 // ---
-            double mxValue = 0;                                       // Defines the max Variance as zero
-            double[] varies = new double[3];                          // Defines an array for the Variances
-            for (int row = 0; row < rows; row++) {                    // Loops through each row of the matrix
-                for (int col = 0; col < cols; col++){                 // Loops through each column of the matrix
-                    varies = GetVariance(hsvImage.map[col, row],      //
-                                         avHue, avSat, avVal);        // Finds the variation between the HSV of the pixels
-                    if (varies[0] + varies[1] + varies[2] > mxValue){ // Tests to see if sum of Variances exceeds the current max
-                        mxValue = varies[0] + varies[1] + varies[2];  // If so, it sets the new max to sum of that Variance
+            Fitmap fmpOrg = new Fitmap((Bitmap)picOriginal.Image);      // Converts original image to a fitmap
+            int rows = fmpOrg.height;                                   // Defines row counter as the image height in pixels
+            int cols = fmpOrg.width;                                    // Defines column counter as the image width in pixels
+            HSVImage hsvImage = new HSVImage(fmpOrg);                   // Creates an HSV matrix of the original image
+            GreyImage saliencyMap = new GreyImage(cols, rows);          // Creates a blank saliency map of the original image
+            HSV avHSV = hsvImage.Average();                             // Calculates the average HSV of all the pixels in the matrix
+            double avHue = avHSV.hue;                                   // ---
+            double avSat = avHSV.sat;                                   // Defines average HSV values as the attributes of the average HSV
+            double avVal = avHSV.val;                                   // ---
+            double mxValue = 0;                                         // Defines the max Variance as zero
+            double[] varies = new double[3];                            // Defines an array for the Variances
+            for (int row = 0; row < rows; row++) {                      // Loops through each row of the matrix
+                for (int col = 0; col < cols; col++) {                  // Loops through each column of the matrix
+                    varies = GetVariance(hsvImage.map[col, row],        //
+                                         avHue, avSat, avVal);          // Finds the variation between the HSV of the pixels
+                    if (varies[0] + varies[1] + varies[2] > mxValue) {  // Tests to see if sum of Variances exceeds the current max
+                        mxValue = varies[0] + varies[1] + varies[2];    // If so, it sets the new max to sum of that Variance
                     }
                 }
             }
@@ -158,8 +158,8 @@ namespace ImageIdentifier {
 
         // Updates the hash in the settings
         private void UpdateHash() {
-            string path = Directory.GetCurrentDirectory() + "/templates.xml";         // Defines the default template path
-            ImageIdentifier.Properties.Settings.Default.hash                          // Sets the hash for the current template
+            string path = Directory.GetCurrentDirectory() + "/templates.xml";     // Defines the default template path
+            ImageIdentifier.Properties.Settings.Default.hash                      // Sets the hash for the current template
                             = GetHash(File.OpenRead(path));
         }
 
