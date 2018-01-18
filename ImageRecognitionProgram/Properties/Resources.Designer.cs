@@ -63,9 +63,19 @@ namespace ImageIdentifier.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap barHue {
+        internal static System.Drawing.Bitmap BarGradient {
             get {
-                object obj = ResourceManager.GetObject("barHue", resourceCulture);
+                object obj = ResourceManager.GetObject("BarGradient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BarHue {
+            get {
+                object obj = ResourceManager.GetObject("BarHue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,16 +113,6 @@ namespace ImageIdentifier.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient {
-            get {
-                object obj = ResourceManager.GetObject("Gradient", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Sigmoid {
             get {
                 object obj = ResourceManager.GetObject("Sigmoid", resourceCulture);
@@ -123,9 +123,9 @@ namespace ImageIdentifier.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap trianglePointer {
+        internal static System.Drawing.Bitmap TrianglePointer {
             get {
-                object obj = ResourceManager.GetObject("trianglePointer", resourceCulture);
+                object obj = ResourceManager.GetObject("TrianglePointer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

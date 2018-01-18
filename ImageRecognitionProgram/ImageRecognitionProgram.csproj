@@ -58,7 +58,7 @@
     <CodeAnalysisRuleSet>ImageRecognitionProgram.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\Brain.ico</ApplicationIcon>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -128,6 +128,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Result.cs" />
     <Compile Include="XMLInterface.cs" />
     <EmbeddedResource Include="Detector.resx">
@@ -145,14 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="ImageRecognitionProgram.ruleset" />
     <None Include="ImageRecognitionProgram_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />
@@ -170,6 +170,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\BarHue.png" />
+    <None Include="Resources\Sigmoid.PNG" />
+    <None Include="Resources\TrianglePointer.png" />
+    <None Include="Resources\BarGradient.jpg" />
+    <None Include="Resources\Brain.png" />
+    <Content Include="Icon.ico" />
+    <Content Include="Resources\Icon.ico" />
     <Content Include="Samples\Apple1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -317,15 +324,7 @@
     <Content Include="Samples\Untitled.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Brain.png" />
     <None Include="Resources\Upload.png" />
-    <None Include="Sigmoid.PNG" />
-    <None Include="Gradient.jpg" />
-    <None Include="trianglePointer.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="barHue.png" />
-    <Content Include="Resources\Brain.ico" />
     <None Include="Resources\Blank.png" />
   </ItemGroup>
   <ItemGroup>
